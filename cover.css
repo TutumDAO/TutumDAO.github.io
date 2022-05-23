@@ -64,7 +64,6 @@ body {
  */
 .masthead {
   top: 0;
-  position: sticky;
   margin-bottom: .5rem;
 }
 .masthead .inner {
@@ -75,10 +74,16 @@ body {
 
 .inner.cover .link-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .inner.cover .link-container a{
-	margin-right: 24px;
+	margin: 0 12px;
+}
+
+.inner.cover .link-container a:first-of-type{
+	margin-left: 0;
 }
 
 .masthead-brand {
@@ -177,13 +182,12 @@ h2:last-of-type {
 
 #section-wrapper section {
 	padding: 10px;
-	margin-bottom: 150px;
 }
 /* #section-wrapper section:first-of-type {
 	height: calc(100vh - 256px);
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	
 	.cover-container {
 	  max-width: 100%;
@@ -242,7 +246,6 @@ h2:last-of-type {
  */
 .mastfoot {
   bottom: 0;
-  position: sticky;
   color: rgba(255, 255, 255, .5);
 }
 
