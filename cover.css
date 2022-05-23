@@ -39,6 +39,7 @@ body {
 }
 
 #bg-wrapper {
+	height: 100%;
 	width: 100%;
 	display: -ms-flexbox;
 	display: flex;
@@ -70,6 +71,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.inner.cover .link-container {
+	display: flex;
+}
+
+.inner.cover .link-container a{
+	margin-right: 24px;
 }
 
 .masthead-brand {
@@ -170,9 +179,9 @@ h2:last-of-type {
 	padding: 10px;
 	margin-bottom: 150px;
 }
-#section-wrapper section:first-of-type {
+/* #section-wrapper section:first-of-type {
 	height: calc(100vh - 256px);
-}
+} */
 
 @media only screen and (max-width: 600px) {
 	
